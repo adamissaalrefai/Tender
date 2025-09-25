@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/Launch/launch_first.dart';
+import 'screens/CreateAcc/login.dart';
 
 void main() {
   runApp(const TenderApp());
@@ -18,7 +18,7 @@ class TenderApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFFFEDBE),
         fontFamily: 'League Spartan',
       ),
-      home: ALaunchFirstScreen(),
+      home: ALogIn(),
       debugShowCheckedModeBanner: false,
     );
   }

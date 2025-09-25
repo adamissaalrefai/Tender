@@ -1,7 +1,31 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import '../Launch/launch_welcome.dart';
 
-class ALaunchFirstScreen extends StatelessWidget {
+// Import your welcome screen
+// Make sure to import the correct path to your BLaunchWelcomeScreen
+// ignore: unused_import
+class ALaunchFirstScreen extends StatefulWidget {
   const ALaunchFirstScreen({super.key});
+
+  @override
+  State<ALaunchFirstScreen> createState() => _ALaunchFirstScreenState();
+}
+
+class _ALaunchFirstScreenState extends State<ALaunchFirstScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Auto-navigate after 2.5 seconds
+    Timer(const Duration(milliseconds: 6000), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => BLaunchWelcomeScreen(), // Your welcome screen
+        ),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -31,16 +55,13 @@ class ALaunchFirstScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     // Time
-                    Positioned(
-                      left: 15,
-                      child: Text(
-                        '16:04',
-                        style: TextStyle(
-                          color: const Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 13,
-                          fontFamily: 'League Spartan',
-                          fontWeight: FontWeight.w500,
-                        ),
+                    Text(
+                      '16:04',
+                      style: TextStyle(
+                        color: const Color(0xFF820000), // Fixed color
+                        fontSize: 13,
+                        fontFamily: 'League Spartan',
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                     // Signal and battery icons
@@ -49,21 +70,21 @@ class ALaunchFirstScreen extends StatelessWidget {
                         // Signal bars
                         Icon(
                           Icons.signal_cellular_4_bar,
-                          color: const Color(0xFF820000),
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           size: 16,
                         ),
                         const SizedBox(width: 4),
                         // WiFi
                         Icon(
                           Icons.wifi,
-                          color: const Color(0xFF820000),
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           size: 16,
                         ),
                         const SizedBox(width: 4),
                         // Battery
                         Icon(
                           Icons.battery_full,
-                          color: const Color(0xFF820000),
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           size: 16,
                         ),
                       ],
@@ -72,11 +93,17 @@ class ALaunchFirstScreen extends StatelessWidget {
                 ),
               ),
             ),
-            // Centered logo
+            // Centered logo with responsive sizing
             Center(
-              child: SizedBox(
-                width: MediaQuery.of(context).size.width * 0.6,
-                height: MediaQuery.of(context).size.height * 0.25,
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.7,
+                height: MediaQuery.of(context).size.height * 0.3,
+                constraints: BoxConstraints(
+                  maxWidth: 280,
+                  maxHeight: 200,
+                  minWidth: 200,
+                  minHeight: 140,
+                ),
                 child: ColorFiltered(
                   colorFilter: ColorFilter.mode(
                     Color(0xFF820000),

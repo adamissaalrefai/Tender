@@ -7,72 +7,81 @@ class BLaunchWelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          width: 393,
-          height: 852,
-          clipBehavior: Clip.antiAlias,
-          decoration: ShapeDecoration(
-            color: const Color(0xFF820000),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-            ),
+    return Scaffold(
+      backgroundColor: const Color(0xFF820000),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: ShapeDecoration(
+          color: const Color(0xFF820000),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
           ),
-          child: Stack(
-            children: [
-              Positioned(
-                left: 0,
-                top: 0,
-                child: Container(
-                  width: 393,
-                  height: 32,
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: const Color(0xFF820000)),
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 35,
-                        top: 9,
-                        child: SizedBox(
-                          width: 30,
-                          height: 14,
-                          child: Text(
-                            '16:04',
-                            style: TextStyle(
-                              color: const Color(0xFF391713),
-                              fontSize: 13,
-                              fontFamily: 'League Spartan',
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
+        ),
+        child: Stack(
+          children: [
+            // Status bar - responsive
+            Positioned(
+              left: 0,
+              top: 0,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: 32,
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                decoration: const BoxDecoration(color: Color(0xFF820000)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      '16:04',
+                      style: TextStyle(
+                        color: const Color(0xFFFFEDBE),
+                        fontSize: 13,
+                        fontFamily: 'League Spartan',
+                        fontWeight: FontWeight.w500,
                       ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 40,
-                top: 587,
-                child: SizedBox(
-                  width: 295,
-                  child: Text(
-                    'Where Every Meal Finds a Home',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: const Color(0xFFF8F8F8),
-                      fontSize: 17,
-                      fontFamily: 'League Spartan',
-                      fontWeight: FontWeight.w500,
-                      height: 0.82,
                     ),
+                    Row(
+                      children: [
+                        Icon(Icons.signal_cellular_4_bar, color: const Color.fromARGB(255, 0, 0, 0), size: 16),
+                        const SizedBox(width: 4),
+                        Icon(Icons.wifi, color: const Color.fromARGB(255, 0, 0, 0), size: 16),
+                        const SizedBox(width: 4),
+                        Icon(Icons.battery_full, color: const Color.fromARGB(255, 0, 0, 0), size: 16),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+            // Tagline text - responsive positioning
+            Positioned(
+              left: 0,
+              right: 0,
+              top: MediaQuery.of(context).size.height * 0.55,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: Text(
+                  'Where Every Meal Finds a Home',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: const Color(0xFFF8F8F8),
+                    fontSize: 17,
+                    fontFamily: 'League Spartan',
+                    fontWeight: FontWeight.w500,
+                    height: 1.2,
                   ),
                 ),
               ),
-              Positioned(
-                left: 93,
-                top: 639,
+            ),
+
+            // Log In Button - responsive
+            Positioned(
+              left: 0,
+              right: 0,
+              top: MediaQuery.of(context).size.height * 0.65,
+              child: Center(
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -82,47 +91,42 @@ class BLaunchWelcomeScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: 207,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.55,
                     height: 45,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          left: 0,
-                          top: 0,
-                          child: Container(
-                            width: 207,
-                            height: 45,
-                            decoration: ShapeDecoration(
-                              color: const Color(0xFFFFDECF),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30),
-                              ),
-                            ),
-                          ),
+                    constraints: BoxConstraints(
+                      maxWidth: 220,
+                      minWidth: 180,
+                    ),
+                    decoration: ShapeDecoration(
+                      color: const Color(0xFFFFDECF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Log In',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: const Color(0xFF820000),
+                          fontSize: 24,
+                          fontFamily: 'League Spartan',
+                          fontWeight: FontWeight.w500,
                         ),
-                        Positioned(
-                          left: 73,
-                          top: 14,
-                          child: Text(
-                            'Log In',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: const Color(0xFF820000),
-                              fontSize: 24,
-                              fontFamily: 'League Spartan',
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
               ),
-              Positioned(
-                left: 93,
-                top: 688,
+            ),
+
+            // Sign Up Button - responsive
+            Positioned(
+              left: 0,
+              right: 0,
+              top: MediaQuery.of(context).size.height * 0.73,
+              child: Center(
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -132,62 +136,62 @@ class BLaunchWelcomeScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: SizedBox(
-                    width: 207,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.55,
                     height: 45,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          left: 0,
-                          top: 0,
-                          child: Container(
-                            width: 207,
-                            height: 45,
-                            decoration: ShapeDecoration(
-                              color: const Color(0xFFFFDECF),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30),
-                              ),
-                            ),
-                          ),
+                    constraints: BoxConstraints(
+                      maxWidth: 220,
+                      minWidth: 180,
+                    ),
+                    decoration: ShapeDecoration(
+                      color: const Color(0xFFFFDECF),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Sign Up',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: const Color(0xFF820000),
+                          fontSize: 24,
+                          fontFamily: 'League Spartan',
+                          fontWeight: FontWeight.w500,
                         ),
-                        Positioned(
-                          left: 64,
-                          top: 14,
-                          child: Text(
-                            'Sign Up',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: const Color(0xFF820000),
-                              fontSize: 24,
-                              fontFamily: 'League Spartan',
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
               ),
-              Positioned(
-                left: 33,
-                top: 223,
+            ),
+
+            // Logo - responsive positioning and sizing
+            Positioned(
+              left: 0,
+              right: 0,
+              top: MediaQuery.of(context).size.height * 0.15,
+              child: Center(
                 child: Container(
-                  width: 326,
-                  height: 326,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://placehold.co/326x326"),
-                      fit: BoxFit.cover,
-                    ),
+                  width: MediaQuery.of(context).size.width * 0.7,
+                  height: MediaQuery.of(context).size.height * 0.3,
+                  constraints: BoxConstraints(
+                    maxWidth: 280,
+                    maxHeight: 200,
+                    minWidth: 200,
+                    minHeight: 140,
+                  ),
+                  child: Image.asset(
+                    "assets/images/Launch_welcome.png",
+                    fit: BoxFit.contain,
+                    color: Color(0xFFFFEDBE),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }

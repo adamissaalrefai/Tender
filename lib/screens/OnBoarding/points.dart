@@ -1,61 +1,249 @@
 import 'package:flutter/material.dart';
+import 'package:tender/main.dart';
+import 'pickup.dart';
 
 class BOnBoarding extends StatelessWidget {
   const BOnBoarding({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          width: 393,
-          height: 852,
-          clipBehavior: Clip.antiAlias,
-          decoration: ShapeDecoration(
-            color: const Color(0xFFF5CB58),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-            ),
+    return Scaffold(
+      backgroundColor: const Color(0xFFFFEDBE),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: ShapeDecoration(
+          color: const Color(0xFFFFEDBE),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
           ),
-          child: Stack(
-            children: [
-              Positioned(
-                left: -45,
-                top: -114,
-                child: Container(
-                  width: 483,
-                  height: 725,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage("https://placehold.co/483x725"),
-                      fit: BoxFit.cover,
-                    ),
+        ),
+        child: Stack(
+          children: [
+            // Background gift voucher image - takes up top 60% of screen
+            Positioned(
+              left: 0,
+              top: 0,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * 0.6,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/images/points.webp"), // Your gift voucher image
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
-              Positioned(
-                left: 0,
-                top: 0,
-                child: Container(
-                  width: 393,
-                  height: 32,
-                  clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(color: const Color(0xFFFFEDBE)),
-                  child: Stack(
+            ),
+            
+            // Status bar
+            Positioned(
+              left: 0,
+              top: 0,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: 32,
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                decoration: const BoxDecoration(color: Color(0xFFFFEDBE)),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      '16:04',
+                      style: TextStyle(
+                        color: const Color.fromARGB(255, 27, 20, 20),
+                        fontSize: 13,
+                        fontFamily: 'League Spartan',
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Icon(Icons.signal_cellular_4_bar, color: const Color(0xFF820000), size: 16),
+                        const SizedBox(width: 4),
+                        Icon(Icons.wifi, color: const Color(0xFF820000), size: 16),
+                        const SizedBox(width: 4),
+                        Icon(Icons.battery_full, color: const Color(0xFF820000), size: 16),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            
+            // Skip button
+            Positioned(
+              right: 20,
+              top: 45,
+              child: GestureDetector(
+                onTap: () {
+                  // Skip to third onboarding screen or main app
+                   Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => TenderApp(),
+                            ),
+                          );
+                },
+                child: Row(
+                  children: [
+                    Text(
+                      'Skip',
+                      style: TextStyle(
+                        color: const Color(0xFF820000),
+                        fontSize: 15,
+                        fontFamily: 'League Spartan',
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const SizedBox(width: 5),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: const Color(0xFF820000),
+                      size: 12,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            
+            // White content section - bottom 40% of screen
+            Positioned(
+              left: 0,
+              bottom: 0,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * 0.4,
+                decoration: ShapeDecoration(
+                  color: const Color(0xFFF8F8F8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20),
+                    ),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: Column(
                     children: [
-                      Positioned(
-                        left: 35,
-                        top: 9,
-                        child: SizedBox(
-                          width: 30,
-                          height: 14,
-                          child: Text(
-                            '16:04',
-                            style: TextStyle(
-                              color: const Color(0xFF391713),
-                              fontSize: 13,
-                              fontFamily: 'League Spartan',
-                              fontWeight: FontWeight.w500,
+                      const SizedBox(height: 30),
+                      
+                      // Gift icon
+                      Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF820000),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Icon(
+                          Icons.card_giftcard,
+                          color: Colors.white,
+                          size: 24,
+                        ),
+                      ),
+                      
+                      const SizedBox(height: 20),
+                      
+                      // Title
+                      Text(
+                        'Redeem points',
+                        style: TextStyle(
+                          color: const Color(0xFF820000),
+                          fontSize: 24,
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      
+                      const SizedBox(height: 20),
+                      
+                      // Description
+                      Text(
+                        'Lorem ipsum dolor sit amet, conse ctetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: const Color(0xFF820000), // Changed from brown to dark red
+                          fontSize: 14,
+                          fontFamily: 'League Spartan',
+                          fontWeight: FontWeight.w500,
+                          height: 1.3,
+                        ),
+                      ),
+                      
+                      const SizedBox(height: 30),
+                      
+                      // Page indicators
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 20,
+                            height: 4,
+                            decoration: ShapeDecoration(
+                              color: const Color(0xFFFFDECF), // Inactive indicator
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 4),
+                          Container(
+                            width: 20,
+                            height: 4,
+                            decoration: ShapeDecoration(
+                              color: const Color(0xFF820000), // Active indicator (second page)
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 4),
+                          Container(
+                            width: 20,
+                            height: 4,
+                            decoration: ShapeDecoration(
+                              color: const Color(0xFFFFDECF), // Inactive indicator
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      
+                      const SizedBox(height: 25),
+                      
+                      // Next button
+                      GestureDetector(
+                        onTap: () {
+                          // Navigate to third onboarding screen or main app
+                           Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => COnBoarding(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          width: 133,
+                          height: 45,
+                          decoration: ShapeDecoration(
+                            color: const Color(0xFF820000),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(100),
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Next',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontFamily: 'League Spartan',
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ),
                         ),
@@ -64,164 +252,10 @@ class BOnBoarding extends StatelessWidget {
                   ),
                 ),
               ),
-              Positioned(
-                left: 0,
-                top: 514,
-                child: Container(
-                  width: 393,
-                  height: 338,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFF8F8F8),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 106,
-                top: 594,
-                child: Text(
-                  'Redeem points',
-                  style: TextStyle(
-                    color: const Color(0xFF820000),
-                    fontSize: 24,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 130,
-                top: 751,
-                child: Container(
-                  width: 133,
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  clipBehavior: Clip.antiAlias,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFF820000),
-                    shape: RoundedRectangleBorder(
-                      side: BorderSide(
-                        width: 1,
-                        color: const Color(0xFF820000),
-                      ),
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    spacing: 10,
-                    children: [
-                      Text(
-                        'Next',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 17,
-                          fontFamily: 'League Spartan',
-                          fontWeight: FontWeight.w500,
-                          height: 1.18,
-                          letterSpacing: -0.09,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 60,
-                top: 642,
-                child: SizedBox(
-                  width: 272,
-                  child: Text(
-                    'Lorem ipsum dolor sit amet, conse ctetur  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: const Color(0xFF391713),
-                      fontSize: 14,
-                      fontFamily: 'League Spartan',
-                      fontWeight: FontWeight.w500,
-                      height: 1,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 186,
-                top: 715,
-                child: Container(
-                  width: 20,
-                  height: 4,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFF820000),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 210,
-                top: 715,
-                child: Container(
-                  width: 20,
-                  height: 4,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFFFDECF),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 162,
-                top: 715,
-                child: Container(
-                  width: 20,
-                  height: 4,
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFFFFDECF),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 315,
-                top: 53,
-                child: Text(
-                  'Skip',
-                  style: TextStyle(
-                    color: const Color(0xFF820000),
-                    fontSize: 15,
-                    fontFamily: 'League Spartan',
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 358,
-                top: 66,
-                child: Container(
-                  transform: Matrix4.identity()..translate(0.0, 0.0)..rotateZ(-3.14),
-                  width: 8,
-                  height: 13,
-                  decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  child: Stack(),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
