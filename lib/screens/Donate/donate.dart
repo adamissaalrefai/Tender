@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Donate extends StatelessWidget {
+  const Donate({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -89,7 +91,7 @@ class Donate extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -140,7 +142,7 @@ class Donate extends StatelessWidget {
               Positioned(
                 left: 135,
                 top: 607,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 39,
@@ -321,7 +323,7 @@ class Donate extends StatelessWidget {
               Positioned(
                 left: 109,
                 top: 397,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 39,
@@ -378,7 +380,7 @@ class Donate extends StatelessWidget {
               Positioned(
                 left: 137,
                 top: 289,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 39,
@@ -418,7 +420,7 @@ class Donate extends StatelessWidget {
               Positioned(
                 left: 137,
                 top: 179,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 323,
@@ -454,7 +456,7 @@ class Donate extends StatelessWidget {
               Positioned(
                 left: 93,
                 top: 730,
-                child: Container(
+                child: SizedBox(
                   width: 207,
                   height: 45,
                   child: Stack(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class UserType extends StatelessWidget {
+  const UserType({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -64,7 +66,7 @@ class UserType extends StatelessWidget {
               Positioned(
                 left: 93,
                 top: 652,
-                child: Container(
+                child: SizedBox(
                   width: 207,
                   height: 45,
                   child: Stack(

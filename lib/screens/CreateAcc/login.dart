@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ALogIn extends StatelessWidget {
+  const ALogIn({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -281,7 +283,7 @@ class ALogIn extends StatelessWidget {
               Positioned(
                 left: 93,
                 top: 600,
-                child: Container(
+                child: SizedBox(
                   width: 207,
                   height: 45,
                   child: Stack(
@@ -382,7 +384,7 @@ class ALogIn extends StatelessWidget {
                       Positioned(
                         left: 7.88,
                         top: 7.88,
-                        child: Container(
+                        child: SizedBox(
                           width: 18.38,
                           height: 18.38,
                           child: Stack(),
@@ -410,7 +412,7 @@ class ALogIn extends StatelessWidget {
                       Positioned(
                         left: 7.88,
                         top: 5.25,
-                        child: Container(
+                        child: SizedBox(
                           width: 18.30,
                           height: 23.63,
                           child: Stack(),
@@ -438,7 +440,7 @@ class ALogIn extends StatelessWidget {
                       Positioned(
                         left: 6.56,
                         top: 5.25,
-                        child: Container(
+                        child: SizedBox(
                           width: 22.39,
                           height: 22.32,
                           child: Stack(),
@@ -451,7 +453,7 @@ class ALogIn extends StatelessWidget {
               Positioned(
                 left: 325,
                 top: 484,
-                child: Container(
+                child: SizedBox(
                   width: 16.49,
                   height: 13.74,
                   child: Stack(),

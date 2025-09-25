@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class JDeliveryAdress extends StatelessWidget {
+  const JDeliveryAdress({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -99,7 +101,7 @@ class JDeliveryAdress extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -304,7 +306,7 @@ class JDeliveryAdress extends StatelessWidget {
               Positioned(
                 left: 336,
                 top: 194,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -348,7 +350,7 @@ class JDeliveryAdress extends StatelessWidget {
               Positioned(
                 left: 336,
                 top: 282,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -392,7 +394,7 @@ class JDeliveryAdress extends StatelessWidget {
               Positioned(
                 left: 336,
                 top: 370,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -471,7 +473,7 @@ class JDeliveryAdress extends StatelessWidget {
               Positioned(
                 left: 50,
                 top: 190,
-                child: Container(
+                child: SizedBox(
                   width: 31,
                   height: 27.12,
                   child: Stack(),
@@ -480,7 +482,7 @@ class JDeliveryAdress extends StatelessWidget {
               Positioned(
                 left: 50,
                 top: 278,
-                child: Container(
+                child: SizedBox(
                   width: 31,
                   height: 27.12,
                   child: Stack(),
@@ -489,7 +491,7 @@ class JDeliveryAdress extends StatelessWidget {
               Positioned(
                 left: 50,
                 top: 366,
-                child: Container(
+                child: SizedBox(
                   width: 31,
                   height: 27.12,
                   child: Stack(),

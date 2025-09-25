@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BHomePageDriver extends StatelessWidget {
+  const BHomePageDriver({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -163,7 +165,7 @@ class BHomePageDriver extends StatelessWidget {
               Positioned(
                 left: 28.66,
                 top: 299.21,
-                child: Container(
+                child: SizedBox(
                   width: 60.86,
                   height: 60.86,
                   child: Stack(),
@@ -204,7 +206,7 @@ class BHomePageDriver extends StatelessWidget {
               Positioned(
                 left: 126.05,
                 top: 301.66,
-                child: Container(
+                child: SizedBox(
                   width: 51.99,
                   height: 51.99,
                   child: Stack(),
@@ -245,7 +247,7 @@ class BHomePageDriver extends StatelessWidget {
               Positioned(
                 left: 219.74,
                 top: 308.14,
-                child: Container(
+                child: SizedBox(
                   width: 45.65,
                   height: 45.65,
                   child: Stack(),
@@ -286,7 +288,7 @@ class BHomePageDriver extends StatelessWidget {
               Positioned(
                 left: 312.11,
                 top: 309.43,
-                child: Container(
+                child: SizedBox(
                   width: 44.38,
                   height: 44.38,
                   child: Stack(),

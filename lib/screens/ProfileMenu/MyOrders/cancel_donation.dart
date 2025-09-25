@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DMyOrdersCancelOrder extends StatelessWidget {
+  const DMyOrdersCancelOrder({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -85,7 +87,7 @@ class DMyOrdersCancelOrder extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -139,7 +141,7 @@ class DMyOrdersCancelOrder extends StatelessWidget {
               Positioned(
                 left: 338,
                 top: 246,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -183,7 +185,7 @@ class DMyOrdersCancelOrder extends StatelessWidget {
               Positioned(
                 left: 338,
                 top: 312,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -227,7 +229,7 @@ class DMyOrdersCancelOrder extends StatelessWidget {
               Positioned(
                 left: 338,
                 top: 379,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -271,7 +273,7 @@ class DMyOrdersCancelOrder extends StatelessWidget {
               Positioned(
                 left: 338,
                 top: 446,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -315,7 +317,7 @@ class DMyOrdersCancelOrder extends StatelessWidget {
               Positioned(
                 left: 338,
                 top: 513,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(

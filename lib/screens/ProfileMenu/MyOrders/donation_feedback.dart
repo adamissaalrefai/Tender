@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GMyOrdersMyOrdersLeaveAReview extends StatelessWidget {
+  const GMyOrdersMyOrdersLeaveAReview({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -85,7 +87,7 @@ class GMyOrdersMyOrdersLeaveAReview extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -121,7 +123,7 @@ class GMyOrdersMyOrdersLeaveAReview extends StatelessWidget {
               Positioned(
                 left: 118,
                 top: 169,
-                child: Container(
+                child: SizedBox(
                   width: 157,
                   height: 157,
                   child: Stack(

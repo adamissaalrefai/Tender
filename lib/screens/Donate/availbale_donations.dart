@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AvailableDonations extends StatelessWidget {
+  const AvailableDonations({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -80,7 +82,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 205,
-                child: Container(
+                child: SizedBox(
                   width: 158,
                   height: 141,
                   child: Stack(
@@ -109,7 +111,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 200,
                 top: 205,
-                child: Container(
+                child: SizedBox(
                   width: 158,
                   height: 141,
                   child: Stack(
@@ -138,7 +140,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 440,
-                child: Container(
+                child: SizedBox(
                   width: 158,
                   height: 141,
                   child: Stack(
@@ -167,7 +169,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 36,
                 top: 666,
-                child: Container(
+                child: SizedBox(
                   width: 158,
                   height: 141,
                   child: Stack(
@@ -368,7 +370,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 200,
                 top: 440,
-                child: Container(
+                child: SizedBox(
                   width: 158,
                   height: 141,
                   child: Stack(
@@ -569,7 +571,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 201,
                 top: 666,
-                child: Container(
+                child: SizedBox(
                   width: 158,
                   height: 141,
                   child: Stack(
@@ -775,7 +777,7 @@ class AvailableDonations extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -798,7 +800,7 @@ class AvailableDonations extends StatelessWidget {
                       Positioned(
                         left: 2,
                         top: 2,
-                        child: Container(width: 22, height: 22, child: Stack()),
+                        child: SizedBox(width: 22, height: 22, child: Stack()),
                       ),
                     ],
                   ),
@@ -946,7 +948,7 @@ class AvailableDonations extends StatelessWidget {
               Positioned(
                 left: 218,
                 top: 682,
-                child: Container(width: 14, height: 14, child: Stack()),
+                child: SizedBox(width: 14, height: 14, child: Stack()),
               ),
               Positioned(
                 left: 44,

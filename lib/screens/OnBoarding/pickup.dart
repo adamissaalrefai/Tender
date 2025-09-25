@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class COnBoarding extends StatelessWidget {
+  const COnBoarding({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -191,7 +193,7 @@ class COnBoarding extends StatelessWidget {
               Positioned(
                 left: 176,
                 top: 537,
-                child: Container(
+                child: SizedBox(
                   width: 40.24,
                   height: 38,
                   child: Stack(),

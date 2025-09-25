@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CMyDonationsActive extends StatelessWidget {
+  const CMyDonationsActive({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -87,7 +89,7 @@ class CMyDonationsActive extends StatelessWidget {
                         Positioned(
                           left: 179,
                           top: 14,
-                          child: Container(width: 34, height: 34, child: Stack()),
+                          child: SizedBox(width: 34, height: 34, child: Stack()),
                         ),
                       ],
                     ),
@@ -123,7 +125,7 @@ class CMyDonationsActive extends StatelessWidget {
                 Positioned(
                   left: 35,
                   top: 222,
-                  child: Container(
+                  child: SizedBox(
                     width: 71.68,
                     height: 108,
                     child: Stack(

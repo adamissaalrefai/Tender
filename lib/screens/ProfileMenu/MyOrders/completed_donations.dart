@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FMyOrdersCompletedOrder extends StatelessWidget {
+  const FMyOrdersCompletedOrder({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -139,7 +141,7 @@ class FMyOrdersCompletedOrder extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -175,7 +177,7 @@ class FMyOrdersCompletedOrder extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 229,
-                child: Container(
+                child: SizedBox(
                   width: 71.68,
                   height: 108,
                   child: Stack(
@@ -204,7 +206,7 @@ class FMyOrdersCompletedOrder extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 376,
-                child: Container(
+                child: SizedBox(
                   width: 71.68,
                   height: 108,
                   child: Stack(
@@ -233,7 +235,7 @@ class FMyOrdersCompletedOrder extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 521,
-                child: Container(
+                child: SizedBox(
                   width: 71.68,
                   height: 108,
                   child: Stack(
@@ -262,7 +264,7 @@ class FMyOrdersCompletedOrder extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 663,
-                child: Container(
+                child: SizedBox(
                   width: 71.68,
                   height: 108,
                   child: Stack(

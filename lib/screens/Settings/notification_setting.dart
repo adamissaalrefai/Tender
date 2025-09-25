@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class QNotificationSetting extends StatelessWidget {
+  const QNotificationSetting({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -412,7 +414,7 @@ class QNotificationSetting extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),

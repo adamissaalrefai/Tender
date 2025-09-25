@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AProfile extends StatelessWidget {
+  const AProfile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -85,7 +87,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -250,7 +252,7 @@ class AProfile extends StatelessWidget {
               Positioned(
                 left: 127,
                 top: 343,
-                child: Container(
+                child: SizedBox(
                   width: 140.65,
                   height: 167,
                   child: Stack(),
@@ -268,7 +270,7 @@ class AProfile extends StatelessWidget {
               Positioned(
                 left: 63,
                 top: 0,
-                child: Container(
+                child: SizedBox(
                   width: 330,
                   height: 852,
                   child: Stack(
@@ -291,7 +293,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 168,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -313,7 +315,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 9.10,
                                 top: 7.15,
-                                child: Container(
+                                child: SizedBox(
                                   width: 22.43,
                                   height: 26,
                                   child: Stack(),
@@ -326,7 +328,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 242,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -348,7 +350,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 11.70,
                                 top: 7.15,
-                                child: Container(
+                                child: SizedBox(
                                   width: 17.48,
                                   height: 26,
                                   child: Stack(),
@@ -361,7 +363,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 316,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -383,7 +385,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 10.40,
                                 top: 7.15,
-                                child: Container(
+                                child: SizedBox(
                                   width: 19.17,
                                   height: 26,
                                   child: Stack(),
@@ -396,7 +398,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 390,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -418,7 +420,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 7.15,
                                 top: 11.05,
-                                child: Container(
+                                child: SizedBox(
                                   width: 26,
                                   height: 17.79,
                                   child: Stack(),
@@ -431,7 +433,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 464,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -453,7 +455,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 7.80,
                                 top: 7.15,
-                                child: Container(
+                                child: SizedBox(
                                   width: 24.88,
                                   height: 26,
                                   child: Stack(),
@@ -466,7 +468,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 538,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -488,7 +490,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 7.15,
                                 top: 7.80,
-                                child: Container(
+                                child: SizedBox(
                                   width: 26,
                                   height: 24.70,
                                   child: Stack(),
@@ -501,7 +503,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 33,
                         top: 612,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -523,7 +525,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 7.80,
                                 top: 7.15,
-                                child: Container(
+                                child: SizedBox(
                                   width: 24.19,
                                   height: 26,
                                   child: Stack(),
@@ -536,7 +538,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 42,
                         top: 724,
-                        child: Container(
+                        child: SizedBox(
                           width: 32,
                           height: 32,
                           child: Stack(
@@ -558,7 +560,7 @@ class AProfile extends StatelessWidget {
                               Positioned(
                                 left: 5.68,
                                 top: 5.68,
-                                child: Container(
+                                child: SizedBox(
                                   width: 20.61,
                                   height: 20.65,
                                   child: Stack(),
@@ -857,7 +859,7 @@ class AProfile extends StatelessWidget {
               Positioned(
                 left: 105,
                 top: 724,
-                child: Container(
+                child: SizedBox(
                   width: 32,
                   height: 32,
                   child: Stack(
@@ -879,7 +881,7 @@ class AProfile extends StatelessWidget {
                       Positioned(
                         left: 5.68,
                         top: 5.68,
-                        child: Container(
+                        child: SizedBox(
                           width: 20.61,
                           height: 20.65,
                           child: Stack(),

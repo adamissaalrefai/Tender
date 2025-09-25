@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LPaymentMethods extends StatelessWidget {
+  const LPaymentMethods({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -112,7 +114,7 @@ class LPaymentMethods extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -121,7 +123,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 185,
-                child: Container(
+                child: SizedBox(
                   width: 39.99,
                   height: 27.37,
                   child: Stack(),
@@ -198,7 +200,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 339,
                 top: 279,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -242,7 +244,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 339,
                 top: 186,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -287,7 +289,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 339,
                 top: 360,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -331,7 +333,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 338,
                 top: 448,
-                child: Container(
+                child: SizedBox(
                   width: 20,
                   height: 20,
                   child: Stack(
@@ -474,7 +476,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 37.11,
                 top: 349,
-                child: Container(
+                child: SizedBox(
                   width: 31.77,
                   height: 39.71,
                   child: Stack(),
@@ -483,7 +485,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 36,
                 top: 260,
-                child: Container(
+                child: SizedBox(
                   width: 34.82,
                   height: 47.04,
                   child: Stack(),
@@ -492,7 +494,7 @@ class LPaymentMethods extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 438,
-                child: Container(
+                child: SizedBox(
                   width: 32.99,
                   height: 39.71,
                   child: Stack(),

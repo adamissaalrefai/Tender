@@ -3,6 +3,8 @@ import '../CreateAcc/login.dart';
 import '../CreateAcc/signup.dart';
 
 class BLaunchWelcomeScreen extends StatelessWidget {
+  const BLaunchWelcomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -80,7 +82,7 @@ class BLaunchWelcomeScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Container(
+                  child: SizedBox(
                     width: 207,
                     height: 45,
                     child: Stack(
@@ -130,7 +132,7 @@ class BLaunchWelcomeScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Container(
+                  child: SizedBox(
                     width: 207,
                     height: 45,
                     child: Stack(

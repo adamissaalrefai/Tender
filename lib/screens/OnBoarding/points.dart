@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BOnBoarding extends StatelessWidget {
+  const BOnBoarding({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(

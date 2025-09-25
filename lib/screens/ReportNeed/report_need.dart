@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ReportANeed extends StatelessWidget {
+  const ReportANeed({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -89,7 +91,7 @@ class ReportANeed extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -257,7 +259,7 @@ class ReportANeed extends StatelessWidget {
               Positioned(
                 left: 176,
                 top: 177,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 39,
@@ -314,7 +316,7 @@ class ReportANeed extends StatelessWidget {
               Positioned(
                 left: 301,
                 top: 288,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 39,
@@ -371,12 +373,12 @@ class ReportANeed extends StatelessWidget {
               Positioned(
                 left: 303,
                 top: 399,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
               Positioned(
                 left: 94,
                 top: 732,
-                child: Container(
+                child: SizedBox(
                   width: 207,
                   height: 45,
                   child: Stack(
@@ -482,7 +484,7 @@ class ReportANeed extends StatelessWidget {
               Positioned(
                 left: 207,
                 top: 625,
-                child: Container(width: 20, height: 20, child: Stack()),
+                child: SizedBox(width: 20, height: 20, child: Stack()),
               ),
             ],
           ),

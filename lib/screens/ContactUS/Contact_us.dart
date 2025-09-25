@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NContactUs extends StatelessWidget {
+  const NContactUs({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -112,7 +114,7 @@ class NContactUs extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -306,7 +308,7 @@ class NContactUs extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 229,
-                child: Container(
+                child: SizedBox(
                   width: 35.92,
                   height: 24.22,
                   child: Stack(),
@@ -315,7 +317,7 @@ class NContactUs extends StatelessWidget {
               Positioned(
                 left: 36,
                 top: 279,
-                child: Container(
+                child: SizedBox(
                   width: 34,
                   height: 33.56,
                   child: Stack(),
@@ -399,7 +401,7 @@ class NContactUs extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 447,
-                child: Container(
+                child: SizedBox(
                   width: 35.44,
                   height: 35.34,
                   child: Stack(
@@ -423,7 +425,7 @@ class NContactUs extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 335,
-                child: Container(
+                child: SizedBox(
                   width: 35.34,
                   height: 35.34,
                   child: Stack(),
@@ -432,7 +434,7 @@ class NContactUs extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 391,
-                child: Container(
+                child: SizedBox(
                   width: 35.45,
                   height: 35.34,
                   child: Stack(),

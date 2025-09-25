@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CHomePageReciever extends StatelessWidget {
+  const CHomePageReciever({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -124,7 +126,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 301,
                 top: 459,
-                child: Container(width: 33, height: 33, child: Stack()),
+                child: SizedBox(width: 33, height: 33, child: Stack()),
               ),
               Positioned(
                 left: 65,
@@ -155,7 +157,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 301,
                 top: 523,
-                child: Container(width: 34, height: 34, child: Stack()),
+                child: SizedBox(width: 34, height: 34, child: Stack()),
               ),
               Positioned(
                 left: 65,
@@ -212,7 +214,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 301,
                 top: 589,
-                child: Container(width: 34, height: 34, child: Stack()),
+                child: SizedBox(width: 34, height: 34, child: Stack()),
               ),
               Positioned(
                 left: 36,
@@ -417,7 +419,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 242,
-                child: Container(width: 50, height: 50, child: Stack()),
+                child: SizedBox(width: 50, height: 50, child: Stack()),
               ),
               Positioned(
                 left: 110.13,
@@ -454,7 +456,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 127,
                 top: 240,
-                child: Container(width: 52, height: 52, child: Stack()),
+                child: SizedBox(width: 52, height: 52, child: Stack()),
               ),
               Positioned(
                 left: 201.25,
@@ -491,7 +493,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 218,
                 top: 242,
-                child: Container(width: 50, height: 50, child: Stack()),
+                child: SizedBox(width: 50, height: 50, child: Stack()),
               ),
               Positioned(
                 left: 292.38,
@@ -528,7 +530,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 312.11,
                 top: 241.43,
-                child: Container(
+                child: SizedBox(
                   width: 44.38,
                   height: 44.38,
                   child: Stack(),
@@ -550,7 +552,7 @@ class CHomePageReciever extends StatelessWidget {
               Positioned(
                 left: 30,
                 top: 714,
-                child: Container(
+                child: SizedBox(
                   width: 335,
                   height: 49,
                   child: Column(

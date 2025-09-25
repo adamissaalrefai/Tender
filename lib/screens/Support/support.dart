@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BSupport extends StatelessWidget {
+  const BSupport({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -94,7 +96,7 @@ class BSupport extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -431,7 +433,7 @@ class BSupport extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 743.92,
-                child: Container(
+                child: SizedBox(
                   width: 26.08,
                   height: 26.08,
                   child: Stack(
@@ -453,7 +455,7 @@ class BSupport extends StatelessWidget {
                       Positioned(
                         left: 5.02,
                         top: 5.02,
-                        child: Container(
+                        child: SizedBox(
                           width: 17.05,
                           height: 17.05,
                           child: Stack(),
@@ -466,7 +468,7 @@ class BSupport extends StatelessWidget {
               Positioned(
                 left: 300.82,
                 top: 743.92,
-                child: Container(
+                child: SizedBox(
                   width: 26.08,
                   height: 26.08,
                   child: Stack(
@@ -488,7 +490,7 @@ class BSupport extends StatelessWidget {
                       Positioned(
                         left: 7.02,
                         top: 5.02,
-                        child: Container(
+                        child: SizedBox(
                           width: 11.61,
                           height: 15.56,
                           child: Stack(),
@@ -501,7 +503,7 @@ class BSupport extends StatelessWidget {
               Positioned(
                 left: 331.92,
                 top: 743.92,
-                child: Container(
+                child: SizedBox(
                   width: 26.08,
                   height: 26.08,
                   child: Stack(
@@ -523,7 +525,7 @@ class BSupport extends StatelessWidget {
                       Positioned(
                         left: 5.02,
                         top: 6.02,
-                        child: Container(
+                        child: SizedBox(
                           width: 14.42,
                           height: 14.42,
                           child: Stack(),
@@ -623,7 +625,7 @@ class BSupport extends StatelessWidget {
               Positioned(
                 left: 340,
                 top: 659,
-                child: Container(width: 52, height: 52, child: Stack()),
+                child: SizedBox(width: 52, height: 52, child: Stack()),
               ),
             ],
           ),

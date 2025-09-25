@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AOnBoarding extends StatelessWidget {
+  const AOnBoarding({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -219,7 +221,7 @@ class AOnBoarding extends StatelessWidget {
               Positioned(
                 left: 179,
                 top: 537,
-                child: Container(
+                child: SizedBox(
                   width: 31,
                   height: 36.81,
                   child: Stack(),

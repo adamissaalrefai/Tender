@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class PSettings extends StatelessWidget {
+  const PSettings({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -81,7 +83,7 @@ class PSettings extends StatelessWidget {
               Positioned(
                 left: 39.20,
                 top: 185,
-                child: Container(
+                child: SizedBox(
                   width: 24.50,
                   height: 35.06,
                   child: Stack(),
@@ -90,7 +92,7 @@ class PSettings extends StatelessWidget {
               Positioned(
                 left: 35,
                 top: 243,
-                child: Container(
+                child: SizedBox(
                   width: 35.32,
                   height: 34.45,
                   child: Stack(),
@@ -99,7 +101,7 @@ class PSettings extends StatelessWidget {
               Positioned(
                 left: 38.15,
                 top: 305,
-                child: Container(
+                child: SizedBox(
                   width: 23.47,
                   height: 34.91,
                   child: Stack(),
@@ -235,7 +237,7 @@ class PSettings extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),

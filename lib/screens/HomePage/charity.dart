@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AHomePageCharity extends StatelessWidget {
+  const AHomePageCharity({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -265,7 +267,7 @@ class AHomePageCharity extends StatelessWidget {
                       Positioned(
                         left: 85,
                         top: 101,
-                        child: Container(width: 50, height: 50, child: Stack()),
+                        child: SizedBox(width: 50, height: 50, child: Stack()),
                       ),
                       Positioned(
                         left: 192.75,
@@ -302,7 +304,7 @@ class AHomePageCharity extends StatelessWidget {
                       Positioned(
                         left: 182,
                         top: 102,
-                        child: Container(width: 56, height: 56, child: Stack()),
+                        child: SizedBox(width: 56, height: 56, child: Stack()),
                       ),
                       Positioned(
                         left: 283.87,
@@ -371,7 +373,7 @@ class AHomePageCharity extends StatelessWidget {
                       Positioned(
                         left: 356.49,
                         top: 94.81,
-                        child: Container(
+                        child: SizedBox(
                           width: 44.38,
                           height: 44.38,
                           child: Stack(),
@@ -429,7 +431,7 @@ class AHomePageCharity extends StatelessWidget {
                       Positioned(
                         left: 7,
                         top: 5,
-                        child: Container(width: 12, height: 16, child: Stack()),
+                        child: SizedBox(width: 12, height: 16, child: Stack()),
                       ),
                     ],
                   ),
@@ -452,7 +454,7 @@ class AHomePageCharity extends StatelessWidget {
                       Positioned(
                         left: 7,
                         top: 5,
-                        child: Container(width: 12, height: 16, child: Stack()),
+                        child: SizedBox(width: 12, height: 16, child: Stack()),
                       ),
                     ],
                   ),
@@ -689,7 +691,7 @@ class AHomePageCharity extends StatelessWidget {
               Positioned(
                 left: 85,
                 top: 388,
-                child: Container(width: 51, height: 51, child: Stack()),
+                child: SizedBox(width: 51, height: 51, child: Stack()),
               ),
               Positioned(
                 left: 245.30,
@@ -726,7 +728,7 @@ class AHomePageCharity extends StatelessWidget {
               Positioned(
                 left: 262,
                 top: 381,
-                child: Container(width: 48, height: 48, child: Stack()),
+                child: SizedBox(width: 48, height: 48, child: Stack()),
               ),
               Positioned(
                 left: 155.15,
@@ -763,7 +765,7 @@ class AHomePageCharity extends StatelessWidget {
               Positioned(
                 left: 175,
                 top: 384,
-                child: Container(width: 42, height: 42, child: Stack()),
+                child: SizedBox(width: 42, height: 42, child: Stack()),
               ),
               Positioned(
                 left: 0,

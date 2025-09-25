@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class IMyProfile extends StatelessWidget {
+  const IMyProfile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -38,7 +40,7 @@ class IMyProfile extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -107,7 +109,7 @@ class IMyProfile extends StatelessWidget {
               Positioned(
                 left: 130,
                 top: 148,
-                child: Container(
+                child: SizedBox(
                   width: 127,
                   height: 127,
                   child: Stack(
@@ -222,7 +224,7 @@ class IMyProfile extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -423,7 +425,7 @@ class IMyProfile extends StatelessWidget {
               Positioned(
                 left: 243,
                 top: 260,
-                child: Container(width: 17, height: 15, child: Stack()),
+                child: SizedBox(width: 17, height: 15, child: Stack()),
               ),
             ],
           ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class KDeliveryAdressAddNewAddress extends StatelessWidget {
+  const KDeliveryAdressAddNewAddress({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -112,7 +114,7 @@ class KDeliveryAdressAddNewAddress extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -121,7 +123,7 @@ class KDeliveryAdressAddNewAddress extends StatelessWidget {
               Positioned(
                 left: 158,
                 top: 164,
-                child: Container(
+                child: SizedBox(
                   width: 76,
                   height: 66.49,
                   child: Stack(),

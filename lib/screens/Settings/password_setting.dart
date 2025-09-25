@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class RPasswordSetting extends StatelessWidget {
+  const RPasswordSetting({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -256,7 +258,7 @@ class RPasswordSetting extends StatelessWidget {
               Positioned(
                 left: 325,
                 top: 239,
-                child: Container(
+                child: SizedBox(
                   width: 16.49,
                   height: 13.74,
                   child: Stack(),
@@ -265,7 +267,7 @@ class RPasswordSetting extends StatelessWidget {
               Positioned(
                 left: 325,
                 top: 363,
-                child: Container(
+                child: SizedBox(
                   width: 16.49,
                   height: 13.74,
                   child: Stack(),
@@ -274,7 +276,7 @@ class RPasswordSetting extends StatelessWidget {
               Positioned(
                 left: 325,
                 top: 459,
-                child: Container(
+                child: SizedBox(
                   width: 16.49,
                   height: 13.74,
                   child: Stack(),
@@ -340,7 +342,7 @@ class RPasswordSetting extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ANotifications extends StatelessWidget {
+  const ANotifications({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -528,7 +530,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -551,7 +553,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 7,
                         top: 5,
-                        child: Container(width: 12, height: 16, child: Stack()),
+                        child: SizedBox(width: 12, height: 16, child: Stack()),
                       ),
                     ],
                   ),
@@ -574,7 +576,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 7,
                         top: 5,
-                        child: Container(width: 12, height: 16, child: Stack()),
+                        child: SizedBox(width: 12, height: 16, child: Stack()),
                       ),
                     ],
                   ),
@@ -972,22 +974,22 @@ class ANotifications extends StatelessWidget {
               Positioned(
                 left: 99,
                 top: 212,
-                child: Container(width: 46, height: 46, child: Stack()),
+                child: SizedBox(width: 46, height: 46, child: Stack()),
               ),
               Positioned(
                 left: 50,
                 top: 553,
-                child: Container(width: 39, height: 39, child: Stack()),
+                child: SizedBox(width: 39, height: 39, child: Stack()),
               ),
               Positioned(
                 left: 51,
                 top: 629,
-                child: Container(width: 37, height: 37, child: Stack()),
+                child: SizedBox(width: 37, height: 37, child: Stack()),
               ),
               Positioned(
                 left: 206,
                 top: 554,
-                child: Container(
+                child: SizedBox(
                   width: 44,
                   height: 44,
                   child: Stack(
@@ -1013,7 +1015,7 @@ class ANotifications extends StatelessWidget {
               Positioned(
                 left: 206,
                 top: 628,
-                child: Container(width: 41, height: 41, child: Stack()),
+                child: SizedBox(width: 41, height: 41, child: Stack()),
               ),
               Positioned(
                 left: 0,
@@ -1027,7 +1029,7 @@ class ANotifications extends StatelessWidget {
               Positioned(
                 left: 66,
                 top: -10,
-                child: Container(
+                child: SizedBox(
                   width: 330,
                   height: 861,
                   child: Stack(
@@ -1049,7 +1051,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 35.13,
                         top: 364,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -1071,7 +1073,7 @@ class ANotifications extends StatelessWidget {
                               Positioned(
                                 left: 9.10,
                                 top: 7.15,
-                                child: Container(
+                                child: SizedBox(
                                   width: 22.43,
                                   height: 26,
                                   child: Stack(),
@@ -1084,7 +1086,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 35,
                         top: 195,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -1110,7 +1112,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 36,
                         top: 280,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -1132,7 +1134,7 @@ class ANotifications extends StatelessWidget {
                               Positioned(
                                 left: 7.15,
                                 top: 7.80,
-                                child: Container(
+                                child: SizedBox(
                                   width: 26,
                                   height: 24.43,
                                   child: Stack(),
@@ -1145,7 +1147,7 @@ class ANotifications extends StatelessWidget {
                       Positioned(
                         left: 36,
                         top: 449,
-                        child: Container(
+                        child: SizedBox(
                           width: 40.30,
                           height: 40.30,
                           child: Stack(
@@ -1167,7 +1169,7 @@ class ANotifications extends StatelessWidget {
                               Positioned(
                                 left: 7.15,
                                 top: 7.80,
-                                child: Container(
+                                child: SizedBox(
                                   width: 26,
                                   height: 24.55,
                                   child: Stack(),
@@ -1184,7 +1186,7 @@ class ANotifications extends StatelessWidget {
               Positioned(
                 left: 137,
                 top: 74.15,
-                child: Container(width: 22, height: 31, child: Stack()),
+                child: SizedBox(width: 22, height: 31, child: Stack()),
               ),
               Positioned(
                 left: 99,

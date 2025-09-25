@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ESetYourFingerprint extends StatelessWidget {
+  const ESetYourFingerprint({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -184,7 +186,7 @@ class ESetYourFingerprint extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -223,7 +225,7 @@ class ESetYourFingerprint extends StatelessWidget {
               Positioned(
                 left: 76,
                 top: 310,
-                child: Container(
+                child: SizedBox(
                   width: 241.90,
                   height: 312.27,
                   child: Stack(),

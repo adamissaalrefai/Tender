@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ALaunchFirstScreen extends StatelessWidget {
+  const ALaunchFirstScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +36,7 @@ class ALaunchFirstScreen extends StatelessWidget {
                       child: Text(
                         '16:04',
                         style: TextStyle(
-                          color: const Color(0xFF820000),
+                          color: const Color.fromARGB(255, 0, 0, 0),
                           fontSize: 13,
                           fontFamily: 'League Spartan',
                           fontWeight: FontWeight.w500,
@@ -72,7 +74,7 @@ class ALaunchFirstScreen extends StatelessWidget {
             ),
             // Centered logo
             Center(
-              child: Container(
+              child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.6,
                 height: MediaQuery.of(context).size.height * 0.25,
                 child: ColorFiltered(

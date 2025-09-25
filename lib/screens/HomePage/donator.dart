@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AHomePageDonator extends StatelessWidget {
+  const AHomePageDonator({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -514,7 +516,7 @@ class AHomePageDonator extends StatelessWidget {
                       Positioned(
                         left: 179,
                         top: 14,
-                        child: Container(width: 34, height: 34, child: Stack()),
+                        child: SizedBox(width: 34, height: 34, child: Stack()),
                       ),
                     ],
                   ),
@@ -537,7 +539,7 @@ class AHomePageDonator extends StatelessWidget {
                       Positioned(
                         left: 7,
                         top: 5,
-                        child: Container(width: 12, height: 16, child: Stack()),
+                        child: SizedBox(width: 12, height: 16, child: Stack()),
                       ),
                     ],
                   ),
@@ -560,7 +562,7 @@ class AHomePageDonator extends StatelessWidget {
                       Positioned(
                         left: 7,
                         top: 5,
-                        child: Container(width: 12, height: 16, child: Stack()),
+                        child: SizedBox(width: 12, height: 16, child: Stack()),
                       ),
                     ],
                   ),
@@ -877,7 +879,7 @@ class AHomePageDonator extends StatelessWidget {
               Positioned(
                 left: 178,
                 top: 217,
-                child: Container(width: 38, height: 38, child: Stack()),
+                child: SizedBox(width: 38, height: 38, child: Stack()),
               ),
               Positioned(
                 left: 179,
@@ -952,22 +954,22 @@ class AHomePageDonator extends StatelessWidget {
               Positioned(
                 left: 99,
                 top: 212,
-                child: Container(width: 46, height: 46, child: Stack()),
+                child: SizedBox(width: 46, height: 46, child: Stack()),
               ),
               Positioned(
                 left: 50,
                 top: 553,
-                child: Container(width: 39, height: 39, child: Stack()),
+                child: SizedBox(width: 39, height: 39, child: Stack()),
               ),
               Positioned(
                 left: 51,
                 top: 629,
-                child: Container(width: 37, height: 37, child: Stack()),
+                child: SizedBox(width: 37, height: 37, child: Stack()),
               ),
               Positioned(
                 left: 206,
                 top: 553,
-                child: Container(
+                child: SizedBox(
                   width: 44,
                   height: 44,
                   child: Stack(
@@ -993,7 +995,7 @@ class AHomePageDonator extends StatelessWidget {
               Positioned(
                 left: 206,
                 top: 628,
-                child: Container(width: 41, height: 41, child: Stack()),
+                child: SizedBox(width: 41, height: 41, child: Stack()),
               ),
               Positioned(
                 left: 339,

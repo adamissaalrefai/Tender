@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AiData extends StatelessWidget {
+  const AiData({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -287,7 +289,7 @@ class AiData extends StatelessWidget {
               Positioned(
                 left: 41,
                 top: 697,
-                child: Container(
+                child: SizedBox(
                   width: 311,
                   height: 45,
                   child: Stack(
